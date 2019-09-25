@@ -13,8 +13,11 @@ for file in directory:
 
 
 
-path = "C:\\Users\\mdcav\\AppData\\Local\\Programs\\Python\\Python37-32\\PythonDrill_100"
-print(os.path.join(path, "file1.txt", "file2.txt", "file3.txt", "file4.py", "file5.py", "file6.py", "file7.py", "file8.txt", "file9.txt", "file10.txt"))
+path = 'C:\\Users\\mdcav\\AppData\\Local\\Programs\\Python\\Python37-32\\PythonDrill_100'
+fileList = os.listdir(path)
+for file in fileList:
+    print(os.path.join(path,file))
+
 
 
 print(os.path.getmtime(path))
